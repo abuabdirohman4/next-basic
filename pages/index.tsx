@@ -1,10 +1,13 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <>
-      <h1>Welcome Abu Abdirohman</h1>
       <Header />
+      <h1 className={styles["title-homepage"]}>Welcome Abu Abdirohman</h1>
+      <Footer />
     </>
   );
 }
