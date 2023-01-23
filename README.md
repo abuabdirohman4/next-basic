@@ -1,4 +1,4 @@
-# Next JS (Ongoing)
+# Next JS (Done)
 
 Reference - Prawito
 
@@ -8,19 +8,19 @@ Reference - Prawito
 - [x] Basic Routing di NextJS #03
 - [x] Setup Eslint di NextJS #04
 - [x] Berpindah halaman dengan Component Link #05
-- [ ] Code Spliting dan PreFetching NextJS #06
-- [ ] Membuat Component Lain di NextJS #07
-- [ ] Global CSS dan CSS Modules #08
-- [ ] Membuat Layout Page #09
-- [ ] Custom halaman 404 (Not Found Page) #10
-- [ ] Auto redirection di NextJS #11
-- [ ] Membuat Metadata di NextJS #12
-- [ ] Optimalisasi Image di NextJS #13
-- [ ] Memahami Dynamic Routes #14
-- [ ] Data Fetching getStaticProps #15
-- [ ] Data Fetching getStaticPaths #16
-- [ ] Data Fetching getServerSideProps #17
-- [ ] Publish aplikasi NextJS dengan Vercel #18
+- [x] Code Spliting dan PreFetching NextJS #06
+- [x] Membuat Component Lain di NextJS #07
+- [x] Global CSS dan CSS Modules #08
+- [x] Membuat Layout Page #09
+- [x] Custom halaman 404 (Not Found Page) #10
+- [x] Auto redirection di NextJS #11
+- [x] Membuat Metadata di NextJS #12
+- [x] Optimalisasi Image di NextJS #13
+- [x] Memahami Dynamic Routes #14
+- [x] Data Fetching getStaticProps #15
+- [x] Data Fetching getStaticPaths #16
+- [x] Data Fetching getServerSideProps #17
+- [x] Publish aplikasi NextJS dengan Vercel #18
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
