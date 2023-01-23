@@ -2,28 +2,30 @@
 import Layout from '../../components/Layout';
 
 interface User {
-  id: number
+  // id: number
   name: string
   email: string
   phone: string
   website: string
 }
-interface UserDetailProps{
-  // user:object
-  user:User
-}
-export default function UserDetail(props:UserDetailProps) {
+// interface UserDetailProps{
+//   // user:object
+//   user:User
+// }
+export default function UserDetail({
+  name, email, website, phone,
+}: User) {
   // const router = useRouter();
   // const { id } = router.query;
-  const { user } = props;
+  // const { user } = props;
 
   return (
     <Layout pageTitle="Users Detail">
       <h1>User Detail Page</h1>
-      <p>{user.name}</p>
-      <p>{user.email}</p>
-      <p>{user.phone}</p>
-      <p>{user.website}</p>
+      <p>{name}</p>
+      <p>{email}</p>
+      <p>{phone}</p>
+      <p>{website}</p>
     </Layout>
   );
 }
@@ -32,10 +34,10 @@ export async function getStaticPaths() {
   const res = await fetch('https://jsonplaceholder.typicode.com/users');
   const dataUsers = await res.json();
 
-  // interface User {
+  // interface Id {
   //   id: number
   // }
-  const paths = dataUsers.map((user:User) => ({
+  const paths = dataUsers.map((user:{id: number}) => ({
     params: {
       id: `${user.id}`,
     },
