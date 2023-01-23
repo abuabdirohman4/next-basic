@@ -12,12 +12,14 @@ interface User {
 //   // user:object
 //   user:User
 // }
-export default function UserDetail({
-  name, email, website, phone,
-}: User) {
+// export default function UserDetail(props:UserDetailProps) {
+export default function UserDetail(props:User) {
   // const router = useRouter();
   // const { id } = router.query;
   // const { user } = props;
+  const {
+    name, email, phone, website,
+  } = props;
 
   return (
     <Layout pageTitle="Users Detail">
@@ -55,11 +57,14 @@ interface GetStaticProps {
 }
 export async function getStaticProps(context: GetStaticProps) {
   const { id } = context.params;
+  // console.log('id', id);
   const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
-  const user = await res.json();
+  const {
+    name, email, phone, website,
+  } = await res.json();
   return {
     props: {
-      user,
+      name, email, phone, website,
     },
   };
 }
