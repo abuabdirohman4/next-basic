@@ -4,13 +4,13 @@ interface UsersProps {
   dataUsers: Array<any>;
 }
 
-export default function index({ dataUsers }: UsersProps) {
+export default function Users({ dataUsers }: UsersProps) {
   console.log(dataUsers);
   return (
     <Layout pageTitle="Users Page">
       <p>Users Page</p>
-      {dataUsers.map((user, index) => (
-        <div key={index}>
+      {dataUsers.map((user) => (
+        <div key={user.id}>
           <p>{user.name}</p>
           <p>{user.email}</p>
         </div>
